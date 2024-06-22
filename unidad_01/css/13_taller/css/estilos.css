@@ -34,8 +34,8 @@
     grid-area: content;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente los elementos */
     align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: center; /* Centra verticalmente los elementos */
 }
 
 .footer {
@@ -51,19 +51,19 @@
     align-items: center;
     justify-content: center;
     border: 2px solid red;
+    width: 300px; /* Ajustar el ancho de la caja amarilla */
 }
 
 .inner-box-container {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between; /* Espacio igual entre las cajas */
 }
 
 .gray-box, .blue-box, .pink-box {
     width: 100px;
-    height: 100px;
+    height: 50px; /* Ajustar la altura de las cajas grises, azules y rosas */
     border: 1px solid black;
-    margin: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
