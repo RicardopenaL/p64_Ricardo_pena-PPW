@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template: 100px 50px 1fr 50px / 1fr;
+    grid-template-areas: 
+        "header" 
+        "menu" 
+        "content" 
+        "footer";
+    grid-gap: 5px;
+    height: 100vh;
+}
+
+.item {
+    background-color: dodgerblue;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.header {
+    grid-area: header;
+    background-color: lightblue; /* Para el header azul claro */
+}
+
+.menu {
+    grid-area: menu;
+    background-color: lightblue; /* Para el menu azul claro */
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* Estilos específicos para las cajas internas en content */
+.yellow-box {
+    background-color: yellow;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.inner-box-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.gray-box, .blue-box, .pink-box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.gray-box {
+    background-color: gray;
+    color: white;
+}
+
+.blue-box {
+    background-color: blue;
+    color: white;
+}
+
+.pink-box {
+    background-color: pink;
+    color: black;
+}
+
