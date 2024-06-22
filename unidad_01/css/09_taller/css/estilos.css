@@ -4,10 +4,33 @@
 
 .container {
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(5, 1fr);
-    grid-gap: 10px;
+    grid-template: 150px 50px 1fr 50px / 1fr;
+    grid-template-areas: "header" "left" "content" "footer";
+    grid-gap: 5px;
+    height: 100vh;
 }
 
 .item {
-    border: 1px solid black;
+    background-color: dodgerblue;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.header {
+    grid-area: header;
+}
+
+.left {
+    grid-area: left;
+}
+
+.content {
+    font-size: xx-large;
+    grid-area: content;
+    overflow-y: auto;
+    height: calc(100vh-200px);
+}
+
+.footer {
+    grid-area: footer;
 }
