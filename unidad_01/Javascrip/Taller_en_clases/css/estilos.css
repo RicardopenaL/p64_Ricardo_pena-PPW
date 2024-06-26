@@ -57,7 +57,6 @@
 }
 
 .item-opcion {
-    border: 2px solid lightgray;
     position: absolute;
     top: 180px;
     width: 300px;
@@ -65,11 +64,21 @@
 }
 
 #opcion_01 {
-    background-color: lawngreen;
     z-index: 2;
 }
 
 #opcion_02 {
-    background-color: lightskyblue;
     z-index: 1;
+}
+
+.imagen1 {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.imagen2 {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
 }
