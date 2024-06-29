@@ -24,3 +24,6 @@ div_cajita.addEventListener('mousemove', function(valor) {
     }
 }, true)
 
+
+
+
