@@ -1,46 +1,27 @@
-// Tipado dinamico
-var a = 100
-console.log( a )
+// Tipos de funciones
 
-a = 10.9
-console.log( a )
-
-a = 'Hola mundo'
-console.log( a )
-
-a = true
-console.log( a )
-
-// Tipos de datos
-var a = 10
-var b = 10.5
-
-console.log( typeof a )
-console.log( typeof b )
-
-var c = true
-console.log( typeof c )
-
-var d = 'Hola mundo'
-console.log( typeof d )
-
-var e
-console.log( typeof e )
-
-var f = null
-console.log( typeof f )
-console.log( f )
-
-// Objetos
-
-var persona = {
-    nombre: 'Melanie',
-    apellido: 'Saltos',
-    ciudad: 'Guayaquil'
+// Funcion declarativa
+function imprimir() {
+    console.log('Hola mundo.')
 }
 
-console.log( typeof persona )
-console.log( persona )
+imprimir()
 
-persona.nombre = 'Melanie Solange'
-console.log( persona )
+// Funcion expresiva o tambien denominada como anonima
+const suma = function(a, b) {
+    return (a + b)
+} 
+
+console.log( suma(10, 20) )
+
+// Funcion flecha
+const suma2 = (a, b) => {
+    let total = a + b
+    console.log(`La suma de ${a} y ${b} es ${total}.`)
+}
+
+suma2(100, 200)
+
+const suma3 = (a, b) => a + b
+
+console.log( suma3(10000, 2000) )

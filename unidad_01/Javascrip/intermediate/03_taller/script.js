@@ -1,46 +1,27 @@
-// Tipado dinamico
-var a = 100
-console.log( a )
-
-a = 10.9
-console.log( a )
-
-a = 'Hola mundo'
-console.log( a )
-
-a = true
-console.log( a )
-
-// Tipos de datos
-var a = 10
-var b = 10.5
-
-console.log( typeof a )
-console.log( typeof b )
-
-var c = true
-console.log( typeof c )
-
-var d = 'Hola mundo'
-console.log( typeof d )
-
-var e
-console.log( typeof e )
-
-var f = null
-console.log( typeof f )
-console.log( f )
-
-// Objetos
-
-var persona = {
-    nombre: 'Melanie',
-    apellido: 'Saltos',
-    ciudad: 'Guayaquil'
+// Creacion de un objeto de manera estatica
+let mi_carro = {
+    marca: 'Mazda',
+    modelo: 'MZX-2000',
+    anio: 2024,
+    detalle_auto: function () {
+        // literal patterns -- ${this.marca}
+        console.log( `Auto: ${this.marca}-${this.modelo}. Año: ${this.anio}.` )
+    }
 }
 
-console.log( typeof persona )
-console.log( persona )
+console.log( mi_carro )
+mi_carro.anio = 2025
+console.log( mi_carro.detalle_auto() )
 
-persona.nombre = 'Melanie Solange'
-console.log( persona )
+// Creacion de un objeto de manera dinamica
+function Carro(marca, modelo, anio) {
+    this.marca = marca
+    this.modelo = modelo
+    this.anio = anio
+    this.detalle_auto = function() {
+        console.log( `Auto: ${this.marca}-${this.modelo}. Año: ${this.anio}.` )
+    }
+}
+
+let mi_carro2 = new Carro('Ford', 'Explorer', 2024)
+mi_carro2.detalle_auto()
