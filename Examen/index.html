@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Recetas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LISTA DE RECETAS</h1>
+    </header>
+
+    <main>
+        <section id="recetas">
+            <h2>Mis Recetas</h2>
+            <ul id="lista-recetas">
+              
+            </ul>
+        </section>
+
+        <section id="agregar-receta">
+            <h2>Agregar Nueva Receta</h2>
+            <form id="form-receta">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+                <button type="submit">Preciona para agrgar receta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p> </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
