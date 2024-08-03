@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #3498db; /* Fondo azul */
+    margin: 0;
+    padding: 0;
+    color: white; /* Color de texto predeterminado */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: black;
+    color: white; /* Color del texto en el encabezado */
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 3px solid #fa7777ef; /* Cambio en el borde inferior */
+    text-align: center;
+    position: relative;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 2px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    margin-top: 70px;
+    color: white; /* Color del título en blanco */
+}
+
+header p {
+    margin: 10px 0;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+    border-radius: 5px;
+    color: black; /* Color del texto en negro */
+}
+
+section h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+ul li {
+    background: #000; /* Color de fondo negro */
+    color: #fff; /* Color de texto blanco */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+ul li:hover {
+    background: #333; /* Cambio de color al hacer hover */
+    transform: scale(1.05);
+}
+
+.certificado-container {
+    display: none; /* Ocultar inicialmente */
+}
+
+.certificado-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    max-height: 300px;
+}
